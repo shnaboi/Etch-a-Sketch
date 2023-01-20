@@ -1,0 +1,37 @@
+body {
+    height: 100%;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.header {
+    border: 2px solid red;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em;
+}
+
+.board {
+    border: 2px solid blue;
+    height: 500px;
+    width: 500px;
+    align-self: center;
+    margin: 1em 1em;
+    display: grid;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    padding: .5em;
+    margin: 1em;
+}
