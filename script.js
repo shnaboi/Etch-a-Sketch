@@ -27,6 +27,12 @@ function changeColor(userInput) {
     color = userInput;
 }
 
+function resetBoard() {
+    let board = document.querySelector(".board");
+    let grid = board.querySelectorAll("div");
+    grid.forEach((div) => div.remove());
+}
+
 // change color to draw with / erase with
 // reset what we've colored
 // change size of coloring board
