@@ -20,10 +20,13 @@ function createBoard(size) {
 createBoard(64);
 
 function fillPixel() {
-    this.style.backgroundColor = 'black';
+    this.style.backgroundColor = color;
 }
 
-// fillPixel() -> to color the grid
+function changeColor(userInput) {
+    color = userInput;
+}
+
 // change color to draw with / erase with
 // reset what we've colored
 // change size of coloring board
