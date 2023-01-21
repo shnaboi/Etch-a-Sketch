@@ -9,7 +9,7 @@ function createBoard(size) {
     let grid = board.querySelectorAll("div");
     grid.forEach((div) => div.remove());
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-    board.style.gridTemplateRows = `repeat(${size}, 1fr)`
+    board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
     let amount = size * size;
     for (let i = 0; i < amount; i++) {
@@ -40,8 +40,9 @@ function resetBoard() {
     let board = document.querySelector(".board");
     let grid = board.querySelectorAll("div");
     grid.forEach((div) => div.remove());
+    createBoard(sizeSlider.value);
 }
 
+// reset button causes drawing to stop (unless you resize board)
 // change color to draw with / erase with
-// change size of coloring board
 // change background color
