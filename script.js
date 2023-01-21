@@ -1,5 +1,8 @@
 let color = 'black';
-// let size = user input
+let sizeSlider = document.getElementById("size-slider");
+let sizeHTML = document.getElementById("sizeHTML");
+
+sizeHTML.innerHTML = sizeSlider.value;
 
 function createBoard(size) {
     let board = document.querySelector(".board");
@@ -15,6 +18,12 @@ function createBoard(size) {
         pixel.style.backgroundColor = "gray";
         board.insertAdjacentElement("beforeend", pixel);
     }
+}
+
+sizeSlider.oninput = function() {
+    sizeHTML.innerHTML = this.value;
+    createBoard(this.value);
+    console.log(this.value);
 }
 
 createBoard(64);
@@ -34,5 +43,5 @@ function resetBoard() {
 }
 
 // change color to draw with / erase with
-// reset what we've colored
 // change size of coloring board
+// change background color

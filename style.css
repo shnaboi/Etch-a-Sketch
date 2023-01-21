@@ -35,3 +35,13 @@ button {
     padding: .5em;
     margin: 1em;
 }
+
+.scale-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scale-container p {
+    padding: 8px;
+    margin: 8px;
+}
