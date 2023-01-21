@@ -13,13 +13,13 @@ body {
     border: 2px solid red;
     font-size: 2.5em;
     text-align: center;
-    padding: 1em;
+    padding: .5em;
 }
 
 .board {
     border: 2px solid blue;
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     align-self: center;
     margin: 1em 1em;
     display: grid;

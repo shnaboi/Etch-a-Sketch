@@ -20,7 +20,7 @@ function createBoard(size) {
 createBoard(64);
 
 function fillPixel() {
-
+    this.style.backgroundColor = 'black';
 }
 
 // fillPixel() -> to color the grid
