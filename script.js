@@ -15,7 +15,7 @@ function createBoard(size) {
     for (let i = 0; i < amount; i++) {
         let pixel = document.createElement("div");
         pixel.addEventListener("mouseover", fillPixel);
-        pixel.style.backgroundColor = "gray";
+        pixel.style.backgroundColor = "white";
         board.insertAdjacentElement("beforeend", pixel);
     }
 }
@@ -23,10 +23,7 @@ function createBoard(size) {
 sizeSlider.oninput = function() {
     sizeHTML.innerHTML = this.value;
     createBoard(this.value);
-    console.log(this.value);
 }
-
-createBoard(64);
 
 function fillPixel() {
     this.style.backgroundColor = color;
@@ -43,6 +40,13 @@ function resetBoard() {
     createBoard(sizeSlider.value);
 }
 
-// reset button causes drawing to stop (unless you resize board)
-// change color to draw with / erase with
-// change background color
+// setup mouse click > thicker "stroke"
+document.querySelector(".board").addEventListener("click", (e) => {
+    console.log('test');
+})
+
+createBoard(64);
+
+// change color to draw with
+// hold click makes bigger stroke
+// make a game to try and color x% of the canvas in x seconds

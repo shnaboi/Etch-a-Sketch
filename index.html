@@ -11,20 +11,22 @@
 <body>
     <div class="body-container">
         <div class="header">Etch-a-Sketch</div>
-        <div class="board">
-            <div></div>
-        </div>
-        <div class="button-container">
-            <button onclick="changeColor('black')">Black</button>
-            <button>Rainbow</button>
-            <button>Custom</button>
-            <button onclick="changeColor('white')">Eraser</button>
-            <button onclick="resetBoard()">Reset</button>
-        </div>
-        <div class="scale-container">
-            <p>Scale: <span id="sizeHTML">16</span></p>
-            <input class="size-slider" id="size-slider" type="range" min="8" max="64" value="16">
-        </div>
+        <div class="content">
+            <div class="board">
+                <div></div>
+            </div>
+            <div class="button-container">
+                <button onclick="changeColor('black')">Black</button>
+                <button>Rainbow</button>
+                <button>Custom</button>
+                <button onclick="changeColor('white')">Eraser</button>
+                <button onclick="resetBoard()">Reset</button>
+            </div>
+            <div class="scale-container">
+                <p>Scale: <span id="sizeHTML">16</span></p>
+                <input class="size-slider" id="size-slider" type="range" min="8" max="64" value="16">
+            </div>
+        </div>  
     </div>
 </body>
 </html>

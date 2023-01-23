@@ -6,23 +6,41 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
+    position: relative;
 }
 
 .header {
     border: 2px solid red;
     font-size: 2.5em;
     text-align: center;
-    padding: .5em;
+    padding: .35em 0px;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
 }
 
 .board {
     border: 2px solid blue;
-    height: 420px;
-    width: 420px;
+    height: 69vh;
+    width: 69vw;
     align-self: center;
-    margin: 1em 1em;
+    /* margin: 100px 1em 0em; */
     display: grid;
+    min-height: 180px;
+    min-width: 180px;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 100px; */
+    position: absolute;
+    align-self: center;
+    top: 100px;
 }
 
 .button-container {
