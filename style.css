@@ -41,6 +41,8 @@ body {
     position: absolute;
     align-self: center;
     top: 100px;
+    border: 2px solid red;
+    padding: 12px;
 }
 
 .button-container {

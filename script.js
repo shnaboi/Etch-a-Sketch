@@ -26,7 +26,11 @@ sizeSlider.oninput = function() {
 }
 
 function fillPixel() {
-    this.style.backgroundColor = color;
+    if (color === 'rainbow') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = color;
+    }
 }
 
 function changeColor(userInput) {
